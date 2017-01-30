@@ -2,3 +2,15 @@ LOG:  database system was shut down at 2017-01-26 00:57:38 EST
 LOG:  MultiXact member wraparound protections are now enabled
 LOG:  database system is ready to accept connections
 LOG:  autovacuum launcher started
+ERROR:  invalid input syntax for integer: ":id" at character 123
+STATEMENT:  SELECT "id", "email", "firstName", "lastName", "dob", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = ':id';
+ERROR:  invalid input syntax for integer: ":id" at character 123
+STATEMENT:  SELECT "id", "email", "firstName", "lastName", "dob", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = ':id';
+ERROR:  invalid input syntax for integer: ":id" at character 123
+STATEMENT:  SELECT "id", "email", "firstName", "lastName", "dob", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = ':id';
+ERROR:  invalid input syntax for integer: ":id" at character 123
+STATEMENT:  SELECT "id", "email", "firstName", "lastName", "dob", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."id" = ':id';
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down

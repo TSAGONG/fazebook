@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Fazbook - All Users</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-
     <h1>Welcome to fazbook</h1>
-    <a href="/users/new"> Create a user </a>
+    <div>
+      <a href="/users/new">Create a user</a>
+    </div>
     <% users.forEach(function(user) { %>
       <div>
-        <span><%= user.email %></span>
-        <span><%= user.firstName %></span>
-        <span><%= user.lastName %></span>
-        <span><%= user.dob %></span>
-          <form action='<%= `/users/${user.id}?_method=DELETE` %>' method='POST'>
-            <button type="submit">X</button>
-        </form>
+        <a href="<%= '/users/' + user.id %>">
+          <%= user.firstName %>
+        </a>
       </div>
-    <% }); %>
-
-<% // this is a comment  %>
-
+    <% }) %>
   </body>
 </html>
-
